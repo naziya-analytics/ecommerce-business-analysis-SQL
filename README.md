@@ -55,29 +55,6 @@ This project demonstrates how SQL can be used to transform structured e-commerce
 
 
 -- =====================================================
--- 7. PRODUCT PERFORMANCE ANALYSIS
--- =====================================================
-
--- Category-wise revenue, units sold and revenue contribution
-
-SELECT
-    p.category,
-    COUNT(DISTINCT p.product_id) AS total_products,
-    SUM(oi.quantity) AS units_sold,
-    ROUND(SUM(oi.quantity * oi.unit_price), 2) AS revenue,
-    ROUND(
-        SUM(oi.quantity * oi.unit_price) * 100.0 / 33468,
-        2
-    ) AS revenue_contribution_percentage
-FROM products p
-JOIN order_items oi
-    ON p.product_id = oi.product_id
-JOIN orders o
-    ON oi.order_id = o.order_id
-WHERE LOWER(TRIM(o.status)) = 'delivered'
-GROUP BY p.category
-ORDER BY revenue DESC;---
-
 
 ### Category-wise Revenue Analysis
 
@@ -86,11 +63,6 @@ ORDER BY revenue DESC;---
 ### Month-over-Month Revenue Growth
 
 ![Monthly Revenue Growth](monthly_revenue_growth.jpg)
-
-### Month-over-Month Revenue Growth
-
-![Monthly Revenue Growth](monthly_revenue_growth.png)
-
 
 
 ## Customer Analysis
