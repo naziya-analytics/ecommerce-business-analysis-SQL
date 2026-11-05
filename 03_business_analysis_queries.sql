@@ -144,7 +144,7 @@ WHERE o.status = 'Delivered';
 
 
 -- =====================================================
--- 7. PRODUCT PERFORMANCE ANALYSIS
+-- 8. PRODUCT PERFORMANCE ANALYSIS
 -- =====================================================
 
 -- Category-wise revenue, units sold and revenue contribution
