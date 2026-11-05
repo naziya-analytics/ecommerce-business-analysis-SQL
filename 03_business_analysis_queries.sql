@@ -154,10 +154,17 @@ SELECT
     COUNT(DISTINCT p.product_id) AS total_products,
     SUM(oi.quantity) AS units_sold,
     ROUND(SUM(oi.quantity * oi.unit_price), 2) AS revenue,
-    ROUND(
-        SUM(oi.quantity * oi.unit_price) * 100.0 / 33468,
-        2
-    ) AS revenue_contribution_percentage
+   ROUND(
+    SUM(oi.quantity * oi.unit_price) * 100.0 /
+    (
+        SELECT SUM(oi2.quantity * oi2.unit_price)
+        FROM order_items oi2
+        JOIN orders o2
+            ON oi2.order_id = o2.order_id
+        WHERE LOWER(TRIM(o2.status)) = 'delivered'
+    ),
+    2
+) AS revenue_contribution_percentage
 FROM products p
 JOIN order_items oi
     ON p.product_id = oi.product_id
