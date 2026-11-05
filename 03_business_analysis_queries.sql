@@ -29,6 +29,40 @@ ORDER BY order_value DESC;
 -- Business question: How much revenue was generated each month?
 -- Only delivered orders are included.
 
+
+-- MONTH-OVER-MONTH REVENUE GROWTH ANALYSIS
+
+WITH monthly_revenue AS (
+    SELECT
+        DATE_FORMAT(o.order_date, '%Y-%m') AS order_month,
+        SUM(oi.quantity * oi.unit_price) AS revenue
+    FROM orders o
+    JOIN order_items oi
+        ON o.order_id = oi.order_id
+    WHERE LOWER(TRIM(o.status)) = 'delivered'
+    GROUP BY DATE_FORMAT(o.order_date, '%Y-%m')
+),
+
+revenue_with_previous_month AS (
+    SELECT
+        order_month,
+        revenue,
+        LAG(revenue) OVER (ORDER BY order_month) AS previous_month_revenue
+    FROM monthly_revenue
+)
+
+SELECT
+    order_month,
+    revenue,
+    previous_month_revenue,
+    ROUND(
+        (revenue - previous_month_revenue) * 100.0 /
+        NULLIF(previous_month_revenue, 0),
+        2
+    ) AS growth_percentage
+FROM revenue_with_previous_month
+ORDER BY order_month;
+
 SELECT
     DATE_FORMAT(o.order_date, '%M %Y') AS order_month,
     SUM(oi.quantity * oi.unit_price) AS monthly_revenue
