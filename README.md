@@ -82,4 +82,11 @@ ORDER BY revenue DESC;---
 ### Category-wise Revenue Analysis
 
 ![Category Revenue Analysis](category_revenue_analysis.png)
-*This is a portfolio project built using sample data for learning and demonstration purposes.*
+
+### Month-over-Month Revenue Growth
+
+![Monthly Revenue Growth](monthly_revenue_growth.png)
+
+### Month-over-Month Revenue Growth
+
+![Monthly Revenue Growth](monthly_revenue_growth.png)*This is a portfolio project built using sample data for learning and demonstration purposes.*
