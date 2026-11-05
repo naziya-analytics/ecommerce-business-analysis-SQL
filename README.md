@@ -89,4 +89,24 @@ ORDER BY revenue DESC;---
 
 ### Month-over-Month Revenue Growth
 
-![Monthly Revenue Growth](monthly_revenue_growth.png)*This is a portfolio project built using sample data for learning and demonstration purposes.*
+![Monthly Revenue Growth](monthly_revenue_growth.png)
+
+
+
+## Customer Analysis
+
+### Customer Retention Analysis
+
+This analysis evaluates customer purchasing behaviour and repeat purchases.
+
+Key findings:
+- Total registered customers: 10
+- Customers who made purchases: 10
+- Repeat customers: 4
+- Repeat customer percentage: 40%
+
+![Customer Retention Analysis](customer_retention_analysis.png)
+
+
+
+*This is a portfolio project built using sample data for learning and demonstration purposes.*
