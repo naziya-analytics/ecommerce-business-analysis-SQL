@@ -85,7 +85,7 @@ ORDER BY revenue DESC;---
 
 ### Month-over-Month Revenue Growth
 
-![Monthly Revenue Growth](monthly_revenue_growth.png)
+![Monthly Revenue Growth](monthly_revenue_growth.jpg)
 
 ### Month-over-Month Revenue Growth
 
