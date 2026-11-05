@@ -62,8 +62,7 @@ This project demonstrates how SQL can be used to transform structured e-commerce
 
 ### Month-over-Month Revenue Growth
 
-![Monthly Revenue Growth](monthly_revenue_growth.png)
-
+![Monthly Revenue Growth](monthly_revenue_growth_updated.png)
 ## Customer Analysis
 
 ### Customer Retention Analysis
