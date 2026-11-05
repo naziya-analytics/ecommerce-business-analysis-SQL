@@ -78,4 +78,8 @@ WHERE LOWER(TRIM(o.status)) = 'delivered'
 GROUP BY p.category
 ORDER BY revenue DESC;---
 
+
+### Category-wise Revenue Analysis
+
+![Category Revenue Analysis](category_revenue_analysis.png)
 *This is a portfolio project built using sample data for learning and demonstration purposes.*
