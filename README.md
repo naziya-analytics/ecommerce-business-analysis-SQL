@@ -96,5 +96,4 @@ This project demonstrates how SQL can be used to transform structured e-commerce
 6. **Monitor Monthly Revenue Trends:** Revenue declined in April before recovering in May. Regular monthly monitoring can help identify changes early and support better sales planning.
 
 
-
-*This is a portfolio project built using sample data for learning and demonstration purposes.*
+*This project was independently developed as part of my SQL learning journey and uses sample e-commerce data for analysis and demonstration purposes.*
