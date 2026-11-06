@@ -76,13 +76,23 @@ This project demonstrates how SQL can be used to transform structured e-commerce
 
 This analysis evaluates customer purchasing behaviour and repeat purchases.
 
-Key findings:
-- Total registered customers: 10
-- Customers who made purchases: 10
-- Repeat customers: 4
-- Repeat customer percentage: 40%
 
 ![Customer Retention Analysis](customer_retention_analysis.png)
+
+
+## Business Recommendations
+
+Based on the analysis, the following business recommendations can help improve e-commerce performance:
+
+1. **Strengthen Accessories Sales:** Accessories contribute 29.85% of total revenue. The business can maintain product availability and explore cross-selling opportunities to support continued sales.
+
+2. **Improve Customer Retention:** With 40% of purchasing customers making repeat purchases, targeted loyalty programs, personalized offers, and follow-up campaigns could encourage more customers to return.
+
+3. **Investigate Order Cancellations:** The order cancellation rate is 13.33%. Reviewing cancellation reasons could help identify operational issues and reduce avoidable cancellations.
+
+4. **Improve Delivery Performance:** The delivery completion rate is 73.33%. Reviewing unsuccessful orders and identifying common delivery issues could help improve order fulfilment.
+
+5. **Monitor Monthly Revenue Trends:** Revenue declined in April before recovering in May. Regular monthly monitoring can help identify changes early and support better sales planning.
 
 
 
