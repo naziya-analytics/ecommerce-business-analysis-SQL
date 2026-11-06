@@ -36,12 +36,19 @@ The project uses a relational database named `ecommerce_analysis` with four tabl
 
 Based on the sample dataset:
 
+- **Total delivered revenue:** ₹33,468.
 - **Order cancellation rate:** 13.33%.
 - **Average order value:** ₹3,042.55 for delivered orders.
+- **Delivery completion rate:** 73.33%.
+- **Highest revenue month:** March 2025, generating ₹7,594.
 - **Top-performing product:** Bluetooth Headphones, generating ₹5,997 from 3 units sold.
-- **Top-performing category:** Accessories, generating ₹9,990.
+- **Top-performing category:** Accessories, generating ₹9,990 (29.85% of total revenue).
 - **Highest-spending customer:** Meera Iyer, with delivered purchases worth ₹4,996.
-
+- **Total registered customers:** 10.
+- **Customers who made purchases:** 10.
+- **Repeat customers:** 4.
+- **Repeat customer percentage:** 40%.
+  
 ## Project Files
 
 | File | Description |
