@@ -55,10 +55,7 @@ Based on the sample dataset:
 |---|---|
 | `01_create_tables.sql` | Creates the database and tables. |
 | `02_insert_sample_data.sql` | Inserts sample customer, product, and order data. |
-| `03_business_analysis_queries.sql` | Contains SQL queries used for business analysis. |
-
-## Project Outcome
-This project demonstrates how SQL can be used to transform structured e-commerce data into meaningful business insights. It showcases practical analytical skills relevant to Business Analyst and Data Analyst roles.
+| `03_business_analysis_queries.sql` | Contains SQL queries used for business analysis. 
 
 
 -- =====================================================
@@ -92,7 +89,11 @@ Based on the analysis, the following business recommendations can help improve e
 
 4. **Improve Delivery Performance:** The delivery completion rate is 73.33%. Reviewing unsuccessful orders and identifying common delivery issues could help improve order fulfilment.
 
-5. **Monitor Monthly Revenue Trends:** Revenue declined in April before recovering in May. Regular monthly monitoring can help identify changes early and support better sales planning.
+
+## Project Outcome
+This project demonstrates how SQL can be used to transform structured e-commerce data into meaningful business insights. It showcases practical analytical skills relevant to Business Analyst and Data Analyst roles.
+
+6. **Monitor Monthly Revenue Trends:** Revenue declined in April before recovering in May. Regular monthly monitoring can help identify changes early and support better sales planning.
 
 
 
